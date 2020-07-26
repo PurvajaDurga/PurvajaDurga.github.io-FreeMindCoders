@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		 <link rel="stylesheet" type="text/css" href="mystyle1.css">
+
+        <title>RoundOff of a number</title>
+                <script>
+            function round(){
+                var num = parseFloat(document.getElementById('num').value);
+                var n1=Math.round(num);
+				n = num.toString();
+				if(num==n1)
+				{
+				document.getElementById('result').innerHTML ='Enter a valid Decimal number . For Example: 20.09, 34.99, 50.213 etc.';
+				}
+				for(var i=0;i<n.length-1;i++)
+				{
+					if(n.charAt(i)==".")
+						{
+						var z=n.charAt(i+1);
+						if(z>=5)
+						{
+			 document.getElementById('result').innerHTML = n1 + ' is the roundoff value of '+num+'. The next digit in the right place is greater than or equal to 5.Therefore,the value is rounded to '+n1+' .';
+						}
+					else
+	{
+	 document.getElementById('result').innerHTML = n1 +' is the roundoff value of '+num+'. The next digit in the right place is less than 5 .Therefore,the value is rounded to '+n1+' .';
+	}
+	}
+	}
+                   
+            } 
+			</script>
+    </head>
+    <body>
+        <h1>RoundOff of a Number:</h1>
+		<h2>Rounding is a process to estimate a particular number in a context. To round a number look at the next digit in the right place, if the digit is less than 5, round down and if the digit is 5 or more than 5, round up.</h2>
+        <form method="post">
+
+           <h2> Enter a number: <input type="number" id="num" name="num"  /></h2><br>
+		<input type="button" class="button1" value="Check" onclick="round()" name="find" />
+			
+            <div style="margin-top: 20px;margin-left:30px;margin-right:30px;" id="result"></div>
+			            
+
+
+
+        </form>
+    </body>
+</html>
+ 
+ 
+ 

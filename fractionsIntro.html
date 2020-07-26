@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		 <link rel="stylesheet" type="text/css" href="mystyle1.css">
+
+        <title>Fractions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            
+      function check_unit(){
+                 var num = document.getElementById('num').value;
+				 var q=Math.round(num);
+                 var den = document.getElementById('den').value;
+				var p=Math.round(den);
+				if(num!=q || den!=p)
+				{
+				alert('Enter a Valid Number');
+				}
+				else if(den==0)
+				{
+					document.getElementById('result').innerHTML='Denominator should not be zero .'
+
+				}
+				else{
+if(num=="" || den=="")
+{
+	document.getElementById('result').innerHTML='Enter a Valid Number .'
+
+}
+   else if(num==1){ 
+        
+        document.getElementById('result').innerHTML=num+"/"+den +"  is a unit fraction because the numerator value is equal to 1.";
+         }
+     else {
+       document.getElementById('result').innerHTML=num+"/"+den +" is not a unit fraction because the numerator value is not equal to 1";
+      }
+	  }
+  }
+        </script>
+    </head>
+    <body>
+        <form method="post">
+		<h1>Fraction Of a Number:</h1>
+           <h2> Enter a Numerator:  <input type="number" id="num" name="num"  /></h2>
+          <h2>  Enter a Denominator:<input type="number" id="den" name="den"/>
+		  </h2>
+      
+      <input type="button" class="button1" value="Find Unit Fraction or not" onclick="check_unit()" />
+	  <h2>Explanation :</h2>
+      <div style="margin-top: 20px;" id="result"></div>
+         </form>
+    </body>
+</html>

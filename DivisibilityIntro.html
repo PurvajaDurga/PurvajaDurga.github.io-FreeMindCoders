@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="mystyle1.css">
+
+        <title>Divisibility rules</title>
+                <script>
+				function one(){
+                var num = document.getElementById('num').value;
+				                var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg :2,-39,33 etc.";
+				}
+               else if(num%2==0) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 1.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 1'; 
+                }
+            }
+            function two(){
+                var num = document.getElementById('num').value;
+				                var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg :2,-39,33 etc.";
+				}
+               else if(num%2==0) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 2 because it has any of the digits 0,2,4,6 or 8 in its ones place.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 2 because it does not have any of the digits 0,2,4,6 or 8 in its ones place.'; 
+                }
+            }
+            function three(){
+                var num = document.getElementById('num').value;
+								         var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg: 3,94,9 etc.";
+				}
+               else if(num%3==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 3 because the sum of the digits of a number is divisible by 3.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 3 the because sum of the digits of a number is not divisible by 3.'; 
+                }
+            } 
+           function four(){
+                var num = document.getElementById('num').value;
+								     var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number.Eg :24,40,90 etc";
+				}
+               else if(num%4==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 4 because the number formed by its last two digits (i.e. tens and ones) is divisible by 4.' ;
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 4 because the number formed by its last two digits (i.e. tens and ones) is not divisible by 4.'; 
+                }
+             }
+          function five(){
+                var num = document.getElementById('num').value;
+								     var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg: 23,10020,233 etc.";
+				}
+             else if(num%5==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 5 because the last number is either 0 or 5.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 5 because the last number is neither 0 nor 5.'; 
+                }
+            }
+          function six(){
+                var num = document.getElementById('num').value;
+				var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg: 23,50,40 etc.";
+				}
+              else  if(num%6==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num +' is divisible by 6. The prime factors of 6 are 2 and 3. So for a number to be divisible by 6, it must also be divisible by 2 and 3. Therefore, we need to check if a number is even and then check if the sum of the digits is divisible by 3.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num +' is not  divisible by 6.The prime factors of 6 are 2 and 3. So for a number to be divisible by 6, it must also be divisible by 2 and 3. Therefore, we need to check if a number is even and then check if the sum of the digits is divisible by 3.'; 
+                }
+            }
+           function seven(){
+                var num = document.getElementById('num').value;
+												     var n1=Math.round(num);
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg: 7,77,-1221 etc.";
+				}
+             else if(num%7==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 7.Take the last digit of the number, double it Then subtract the result from the rest of the number the resulting number is evenly divisible by 7.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 7.Take the last digit of the number, double it Then subtract the result from the rest of the number the resulting number is not divisible by 7.'; 
+                }
+            }
+           function eight(){
+                var num = document.getElementById('num').value;
+						   var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg: 88,108,-99 etc.";
+				}
+              else if(num%8==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 8 because the numbers formed by the last three digits is divisible by 8.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 8 because the numbers formed by the last three digits is not divisible by 8'; 
+                }
+            }
+           function nine(){
+                var num = document.getElementById('num').value;
+										   var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number.Eg: 99,-9023,23 etc.";
+				}
+               else if(num%9==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 9 because the sum of the digits of a number is divisible by 9.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 9 because the sum of the digits of a number is not divisible by 9.'; 
+                }
+            }
+           function ten(){
+                var num = document.getElementById('num').value;
+											   var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number.Eg: 1000,902,504 etc.";
+				}
+               else if(num%10==0) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 10 because the last digit of the number is 0.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 10 because the last digit of the number is not 0.'; 
+                }
+            }
+           
+           function eleven(){
+                var num = document.getElementById('num').value;
+								var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg: 23,22,344 etc.";
+				}
+               else if(num%11==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 11. Subtract the last digit from a number made by the other digits.This number is divisible by 11 so the original number is divisible by 11';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 11.Subtract the last digit from a number made by the other digits.This number is not divisible by 11 so the original number is also not divisible by 11'; 
+                }
+            }
+           function twelev(){
+                var num = document.getElementById('num').value;
+												var n1=Math.round(num);
+
+				if(num=="" || num!=n1)
+				{
+				document.getElementById('result').innerHTML ="Enter a valid Number. Eg :120,23,90 etc.";
+				}
+             else   if(num%12==0 && num==n1) {
+                 document.getElementById('result').innerHTML = num + ' is divisible by 12 because it is divisible by both 3 and 4.';
+                     }
+                else{
+                  document.getElementById('result').innerHTML = num + ' is not  divisible by 12 not divisible by both 3 and 4.'; 
+                }
+            }
+
+      </script>
+    </head>
+    <body>
+        <h1>Divisibility Rules from 1 to 12</h1>
+        <form method="post">
+          <h2>  Enter a number:  <input type="number" id="num" name="num"  /></h2>
+      <input type="button" class="button2" value="Check1" onclick="one()" name="find" />
+	  <input type="button" class="button2" value="Check2" onclick="two()" name="find" />
+      <input type="button" class="button2" value="check3" onclick="three()" name="find" />
+      <input type="button" class="button2" value="check4" onclick="four()" name="find" />
+      <input type="button" class="button2" value="check5" onclick="five()" name="find" />
+      <input type="button" class="button2" value="check6" onclick="six()" name="find" /><br>
+      <input type="button" class="button2" value="check7" onclick="seven()" name="find" />
+      <input type="button" class="button2" value="check8" onclick="eight()" name="find" />
+      <input type="button" class="button2" value="check9" onclick="nine()" name="find" />
+      <input type="button" class="button2" value="check10" onclick="ten()" name="find" /> 
+      <input type="button" class="button2" value="check11" onclick="eleven()" name="find" />
+      <input type="button" class="button2" value="check12" onclick="twelev()" name="find" />
+            <div style="margin-top: 20px;" id="result"></div>
+                  
+
+
+
+        </form>
+    </body>
+</html>
